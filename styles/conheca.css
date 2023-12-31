@@ -1,0 +1,124 @@
+.conheca {
+    background: linear-gradient(304deg, #FFB800 33.55%, #FAD064 74.67%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.conheca__container {
+    padding: 2em;
+    text-align: center;
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conheca__titulo {
+    padding-top: 1em;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.conheca__texto {
+    font-size: 1.5em;
+    margin-top: 2em;
+    line-height: 130%;
+    text-align: left;
+    text-indent: 1em;
+}
+
+.conheca__botao {
+    background-color: var(--background-vermelho);
+    padding: 12px 1.5em;
+    border-radius: 12px;
+    color: var(--cor-primaria);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 1.5em 0 3em 0;
+    box-shadow: 1px 1px 4px 0px rgba(129, 4, 4, 0.18), 5px 6px 8px 0px rgba(129, 4, 4, 0.15), 12px 13px 11px 0px rgba(129, 4, 4, 0.09), 22px 23px 13px 0px rgba(129, 4, 4, 0.03), 34px 36px 14px 0px rgba(129, 4, 4, 0.00);
+    transition: all .8s ease;
+}
+
+.conheca__botao:hover {
+    background-color: var(--background-principal);
+    color: var(--background-amarelo);
+    box-shadow: 1px 1px 4px 0px rgba(140, 107, 18, 0.18), 5px 6px 8px 0px rgba(140, 107, 18, 0.15), 12px 13px 11px 0px rgba(140, 107, 18, 0.09), 22px 23px 13px 0px rgba(140, 107, 18, 0.03), 34px 36px 14px 0px rgba(140, 107, 18, 0.00);
+}
+
+.conheca__botao:hover ~ svg {
+    fill: var(--background-amarelo);
+}
+
+.conheca__botao:active {
+    background-color: var(--background-secundario);
+    box-shadow: 1px 1px 4px 0px rgba(12, 50, 110, 0.18), 5px 6px 8px 0px rgba(12, 50, 110, 0.15), 12px 13px 11px 0px rgba(12, 50, 110, 0.09), 22px 23px 13px 0px rgba(12, 50, 110, 0.03), 34px 36px 14px 0px rgba(12, 50, 110, 0.00);
+    color: var(--cor-primaria);
+}
+
+.conheca__botao > svg {
+    margin-left: 1em;
+}
+
+.conheca__imagem {
+    position: relative;
+    bottom: -2px;
+}
+
+.conheca__imagem-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 415px) {
+    .conheca__imagem {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conheca {
+        flex-direction: row-reverse;
+    }
+
+    .conheca__imagem {
+        align-items: end;
+    }
+
+    .conheca__imagem-mob {
+        display: none;
+    }
+
+    .div__imagem-desktop {
+        height: 580px;
+        width: 550px;
+        position: relative;
+    }
+
+    .conheca__imagem-desktop {
+        display: block;
+        object-fit: cover;
+        position: absolute;
+        bottom: 2px;
+    }
+
+    .conheca__titulo, .conheca__texto {
+        text-align: left;
+
+    }
+
+    .conheca__titulo {
+        line-height: 120%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .conheca {
+        margin: 0 auto;
+        width: 1000px;
+    }
+}

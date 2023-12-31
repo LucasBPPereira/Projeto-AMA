@@ -1,0 +1,108 @@
+.tela-inicial__imagem {
+    height: 573px;
+    background-image: url("../imagens/mob-mov/img-tela-inicio-mob.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 1.5em;
+}
+
+.tela-inicial__titulo {
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 1em 3em 1em;
+    margin: 0 auto;
+}
+
+.tela-inicial__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 3em 1.5em;
+}
+
+.container__descricao {
+    height: 240px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container__descricao:nth-of-type(1) {
+    background-color: var(--background-amarelo);
+}
+
+.container__descricao:nth-of-type(2) {
+    background-color: var(--background-secundario);
+}
+
+.container__descricao:nth-of-type(3) {
+    background-color: var(--background-vermelho);
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--cor-primaria);
+    padding: 1.5em 1em;
+}
+
+/* View tablet--- */
+
+@media screen and (min-width: 415px) {
+    .tela-inicial__imagem {
+        background-image: url("../imagens/img tela inicio.png");
+        background-position: center;
+    }
+
+    .tela-inicial__titulo {
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .tela-inicial__container {
+        flex-direction: row;
+        align-items: start;
+        gap: 0;
+    }
+
+    .container__descricao:nth-of-type(1) {
+        order: 2;
+        flex-grow: 2;
+        width: 30%;
+        height: 260px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .container__descricao:nth-of-type(2) {
+        order: 1;
+        width: 35%;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .container__descricao:nth-of-type(3) {
+        order: 3;
+        width: 35%;
+        border-radius: 0 15px 15px 0;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+    .tela-inicial__imagem {
+        margin: 0 4%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .tela-inicial__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

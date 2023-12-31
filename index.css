@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+@import url("styles/header.css");
+@import url("styles/telaInicial.css");
+@import url("styles/conheca.css");
+@import url("styles/noticias.css");
+@import url("styles/depoimentos.css");
+@import url("styles/parceiros&convenios.css");
+@import url("styles/rodape.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --fonte-principal: 'Poppins', sans-serif;
+    --background-principal: #F5F5F5;
+    --background-secundario: #0046C2;
+    --background-vermelho: #FF4242;
+    --background-amarelo: #FFB800;
+    --cor-primaria: #F5F5F5;
+    --cor-secundaria: #1E1E1E;
+    --cor-terciaria: #D9D9D9;
+    --cor-nav-titulo: #0046C2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;    
+    font-weight: 300;
+}
+
+/* Background azul após 1024px */
+
+.background-azul-desktop {
+    display: none;
+}
+
+
+/* Antes do Rodapé no mobile */
+.img-footer-mob {
+    background-image: url("../imagens/forma-footer-mob.png");
+    background-repeat: no-repeat;
+    height: 114px;
+    position: relative;
+    top: -12px;
+}
+
+
+/* área destinada ao autor do site */
+
+.dev__autor {
+    background-color: var(--background-amarelo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.autor__texto {
+    font-weight: 900;
+    font-size: 0.9em;
+    color: var(--cor-primaria);
+}
+
+@media screen and (min-width: 415px) {
+    .img-footer-mob {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .background-azul-desktop {
+        display: block;
+        background-image: url("imagens/FundoAzulHome.png");
+        background-size: cover;
+        width: 100%;
+        height: 1900px;
+        position: absolute;
+        top: 1564px;
+        left: 0;
+        z-index: 0;
+    }
+
+    .noticias {
+        background: none;
+    }
+    .parceiros__convenios {
+        background: none;
+    }
+    .depoimentos {
+        background: none;
+    }
+
+    .espacamento {
+        margin: 0 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .espacamento__tamanho-width {
+        width: 1100px;
+    }
+}

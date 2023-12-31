@@ -1,0 +1,113 @@
+.cabecalho {
+    height: 6.375rem;
+    padding: 1em;
+    border-bottom: 2px solid var(--cor-terciaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;    
+}
+
+.logo__cabecalho-desktop {
+    display: none;
+}
+
+.nav__container-desktop {
+    display: none;
+}
+
+.nav__container-menu {
+    background-image: url("../imagens/svgs-icones/hamburguer-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 25px;
+    height: 22px;
+}
+
+.nav__container {
+    display: none;
+    cursor: pointer;
+}
+
+.container-img {
+    padding: 1em;
+}
+
+.nav__container:checked~.nav__pages {
+    display: block;
+}
+
+.nav__pages {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    top: 100%;
+    left: 0;
+    height: 100vh;
+    background: var(--background-principal);
+}
+
+.pages__item {
+    padding: .8em;
+}
+
+.pages__item-link {
+    text-decoration: none;
+    color: var(--cor-sedundaria);
+    font-size: 1.5em;
+}
+
+.pages__item-titulo {
+    color: var(--cor-nav-titulo);
+    font-weight: 700;
+    font-size: 2em;
+    padding: .5em 1em;
+}
+
+.nav__social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0 0 50px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .logo__cabecalho-desktop {
+        display: block;
+    }
+
+    .logo__cabecalho-mob {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1155px) {
+
+    .cabecalho {
+        justify-content: center;
+        gap: 90px;
+    }
+    
+    .nav__container, label, .nav__pages, .pages__item-titulo, .pages__item-link, .nav__social {
+        display: none;
+    }
+
+    .nav__container-desktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .pages__link-desktop {
+        padding: 1em;
+        color: var(--cor-sedundaria);
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,27 @@
+.parceiros__convenios {
+    background-color: var(--background-secundario);
+    padding: 1.7em;
+    text-align: center;
+    position: relative;
+    top: -12px;
+}
+
+.parceiros__convenios__titulo {
+    color: var(--background-secundario);
+    background-color: var(--background-principal);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: .3em .5em;
+    border-radius: 8px;
+}
+
+.parceiros__convenios > .swiper {
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .parceiros__convenios__titulo {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

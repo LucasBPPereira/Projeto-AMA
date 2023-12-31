@@ -1,0 +1,41 @@
+.depoimentos {
+    background-color: var(--background-secundario);
+    text-align: center;
+    padding: 3em 1.7em;
+    position: relative;
+    top: -12px;
+}
+
+.depoimentos__titulo {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.depoimentos__imagem-associado {
+    margin: 2.5em 0;
+}
+
+.depoimentos__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    color: var(--cor-primaria);
+}
+
+.depoimmentos__titulo-associado, .depoimentos__nome-associado {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.depoimentos__texto-associado {
+    padding: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .depoimentos__container {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
