@@ -2,6 +2,7 @@
     height: 573px;
     background-image: url("../imagens/mob-mov/img-tela-inicio-mob.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: end;

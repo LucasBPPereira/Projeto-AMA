@@ -39,8 +39,26 @@
     color: var(--background-secundario);
 }
 
+.rodape__local-link {
+    text-decoration: none;
+}
+
 .rodape__texto {
     padding: .5em;
+}
+
+.rodape__local-link > .rodape__texto {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rodape__local-link:visited {
+    color: var(--cor-secundaria);
+}
+
+.rodape__logo__ama {
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {

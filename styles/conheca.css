@@ -49,10 +49,18 @@
     color: var(--background-amarelo);
     box-shadow: 1px 1px 4px 0px rgba(140, 107, 18, 0.18), 5px 6px 8px 0px rgba(140, 107, 18, 0.15), 12px 13px 11px 0px rgba(140, 107, 18, 0.09), 22px 23px 13px 0px rgba(140, 107, 18, 0.03), 34px 36px 14px 0px rgba(140, 107, 18, 0.00);
 }
+/*
+  Copiar o elemento svg e mudar o fill do novo junto com o display none, quando acionar o hover, mudar o display para block
 
-.conheca__botao:hover ~ svg {
-    fill: var(--background-amarelo);
+.conheca__botao > svg {
+    display: inline;
 }
+
+.conheca__botao:hover ~ svg:hover > #arrowIcon__botao {
+    fill: #FFB800;
+}
+
+*/
 
 .conheca__botao:active {
     background-color: var(--background-secundario);
@@ -67,6 +75,10 @@
 .conheca__imagem {
     position: relative;
     bottom: -2px;
+}
+
+.conheca__imagem-mob {
+    width: 100%;
 }
 
 .conheca__imagem-desktop {

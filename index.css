@@ -66,7 +66,11 @@ body {
     color: var(--cor-primaria);
 }
 
-@media screen and (min-width: 415px) {
+.autor__logo {
+    width: 100%;
+}
+
+@media screen and (min-width: 416px) {
     .img-footer-mob {
         display: none;
     }
