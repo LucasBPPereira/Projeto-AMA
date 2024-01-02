@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .tela-inicial__imagem {
     height: 573px;
     background-image: url("../imagens/mob-mov/img-tela-inicio-mob.jpg");

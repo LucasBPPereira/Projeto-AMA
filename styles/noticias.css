@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .noticias {
     background-color: var(--background-secundario);
     position: relative;
@@ -87,12 +89,27 @@
     color: var(--cor-primaria);
     font-weight: 700;
     text-decoration: none;
-    margin: 1.5em 0 3em 0;
+    margin: 2.5em 0 3em 0;
     box-shadow: 1px 1px 4px 0px rgba(129, 4, 4, 0.18), 5px 6px 8px 0px rgba(129, 4, 4, 0.15), 12px 13px 11px 0px rgba(129, 4, 4, 0.09), 22px 23px 13px 0px rgba(129, 4, 4, 0.03), 34px 36px 14px 0px rgba(129, 4, 4, 0.00);
+    transition: all .8s ease;
 }
 
 .noticias__botao > svg {
     margin-left: 1em;
+}
+
+.noticias__botao:hover, .noticias__botao:active {
+    background-color: var(--background-principal);
+    color: var(--background-amarelo);
+    box-shadow: 1px 1px 4px 0px rgba(140, 107, 18, 0.18), 5px 6px 8px 0px rgba(140, 107, 18, 0.15), 12px 13px 11px 0px rgba(140, 107, 18, 0.09), 22px 23px 13px 0px rgba(140, 107, 18, 0.03), 34px 36px 14px 0px rgba(140, 107, 18, 0.00);
+}
+
+.noticias__botao > svg > path {
+    transition: all .8s ease;
+}
+
+.noticias__botao:hover > svg > path, .noticias__botao:active > svg > path {
+    fill: var(--background-amarelo);
 }
 
 @media screen and (min-width: 415px) {

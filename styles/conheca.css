@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .conheca {
     background: linear-gradient(304deg, #FFB800 33.55%, #FAD064 74.67%);
     display: flex;
@@ -49,23 +51,23 @@
     color: var(--background-amarelo);
     box-shadow: 1px 1px 4px 0px rgba(140, 107, 18, 0.18), 5px 6px 8px 0px rgba(140, 107, 18, 0.15), 12px 13px 11px 0px rgba(140, 107, 18, 0.09), 22px 23px 13px 0px rgba(140, 107, 18, 0.03), 34px 36px 14px 0px rgba(140, 107, 18, 0.00);
 }
-/*
-  Copiar o elemento svg e mudar o fill do novo junto com o display none, quando acionar o hover, mudar o display para block
 
-.conheca__botao > svg {
-    display: inline;
+.conheca__botao > svg > path {
+    transition: all .8s ease;
 }
 
-.conheca__botao:hover ~ svg:hover > #arrowIcon__botao {
-    fill: #FFB800;
+.conheca__botao:hover > svg > path {
+    fill: var(--background-amarelo);
 }
-
-*/
 
 .conheca__botao:active {
     background-color: var(--background-secundario);
     box-shadow: 1px 1px 4px 0px rgba(12, 50, 110, 0.18), 5px 6px 8px 0px rgba(12, 50, 110, 0.15), 12px 13px 11px 0px rgba(12, 50, 110, 0.09), 22px 23px 13px 0px rgba(12, 50, 110, 0.03), 34px 36px 14px 0px rgba(12, 50, 110, 0.00);
     color: var(--cor-primaria);
+}
+
+.conheca__botao:active > svg > path {
+    fill: var(--background-principal);
 }
 
 .conheca__botao > svg {
