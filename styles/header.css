@@ -24,7 +24,7 @@
 }
 
 .nav__container-menu {
-    background-image: url("../imagens/svgs-icones/hamburguer-menu.svg");
+    background-image: url("../img/svgs-icones/hamburguer-menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;

@@ -2,7 +2,7 @@
 
 .tela-inicial__imagem {
     height: 573px;
-    background-image: url("../imagens/mob-mov/img-tela-inicio-mob.jpg");
+    background-image: url("../img/mob-mov/img-tela-inicio-mob.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 415px) {
     .tela-inicial__imagem {
-        background-image: url("../imagens/img tela inicio.png");
+        background-image: url("../img/img tela inicio.png");
         background-position: center;
     }
 

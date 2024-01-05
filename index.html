@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMA teste</title>
-    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="/styles/alt_styles/resetcss.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="styles/alt_styles/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="cabecalho__logo container">
-            <a href="index.html" class="logo__cabecalho-mob"><img src="imagens/Logo-Ama mob.png"
+            <a href="index.html" class="logo__cabecalho-mob"><img src="img/Logo-Ama mob.png"
                     alt="Logo da AMA Itapoá"></a>
-            <a href="index.html" class="logo__cabecalho-desktop"><img src="imagens/ama-logo-header.png"
+            <a href="index.html" class="logo__cabecalho-desktop"><img src="img/ama-logo-header.png"
                     alt="Logo da AMA Itapoá"></a>
         </div>
         <nav class="cabecalho__nav container">
             <nav class="nav__container-desktop">
                 <a href="index.html" class="pages__link-desktop">HOME</a>
-                <a href="" class="pages__link-desktop">AMA</a>
-                <a href="" class="pages__link-desktop">NOTÍCIAS</a>
-                <a href="" class="pages__link-desktop">FOTOS</a>
-                <a href="" target="_blank" class="pages__link-desktop">SOBRE O AUTISMO</a>
-                <a href="" target="_blank" class="pages__link-desktop">CONTATO</a>
-                <a href="" target="_blank" class="pages__link-desktop">COMO AJUDAR</a>
+                <a href="#" class="pages__link-desktop">AMA</a>
+                <a href="components/pages/noticias/" class="pages__link-desktop">NOTÍCIAS</a>
+                <a href="#" class="pages__link-desktop">FOTOS</a>
+                <a href="#" target="_blank" class="pages__link-desktop">SOBRE O AUTISMO</a>
+                <a href="#" target="_blank" class="pages__link-desktop">CONTATO</a>
+                <a href="#" target="_blank" class="pages__link-desktop">COMO AJUDAR</a>
             </nav>
             <input type="checkbox" id="menu" class="nav__container">
             <label for="menu">
-                <span class="nav__container-menu container-img"></span>
+                <!-- <span class="nav__container-menu container-img"></span> -->
+                <div class="hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </div>
             </label>
             <ul class="nav__pages">
                 <li class="pages__item-titulo">Menu</li>
@@ -112,9 +118,9 @@
                 </div>
                 <div class="conheca__imagem">
                     <div class="div__imagem-desktop"><img class="conheca__imagem-desktop"
-                            src="imagens/gurizinho-maos-levantadas.png" alt="Criança com as mãos abertas pintadas.">
+                            src="img/gurizinho-maos-levantadas.png" alt="Criança com as mãos abertas pintadas.">
                     </div>
-                    <img class="conheca__imagem-mob" src="imagens/mob-mov/menino-maos-levantadas-mob.png"
+                    <img class="conheca__imagem-mob" src="img/mob-mov/menino-maos-levantadas-mob.png"
                         alt="Criança com as mãos abertas pintadas.">
                 </div>
             </section>
@@ -128,7 +134,7 @@
                     <div class="noticas__container__principais">
                         <div class="noticia__recente">
                             <div class="noticia__recente__container">
-                                <img src="imagens/noticia-2.png" alt="Mulheres participando do encontro solidário"
+                                <img src="img/noticia-2.png" alt="Mulheres participando do encontro solidário"
                                     class="noticia__imagem">
                                 <p class="noticia__recente-texto">Encontro solidário com parceiros da AMA...</p>
                                 <div class="noticia__descricao">
@@ -161,7 +167,7 @@
                         </div>
                         <div class="noticia__recente">
                             <div class="noticia__recente__container">
-                                <img src="imagens/noticia-3.png" alt="Livros" class="noticia__imagem">
+                                <img src="img/noticia-3.png" alt="Livros" class="noticia__imagem">
                                 <p class="noticia__recente-texto">Domingou novamente com a feira de livros da AMA...</p>
                                 <div class="noticia__descricao">
                                     <div class="noticia__descricao__container">
@@ -193,7 +199,7 @@
                         </div>
                         <div class="noticia__recente">
                             <div class="noticia__recente__container">
-                                <img src="imagens/noticia-1.png" alt="Mulheres participando do encontro solidário"
+                                <img src="img/noticia-1.png" alt="Mulheres participando do encontro solidário"
                                     class="noticia__imagem">
                                 <p class="noticia__recente-texto">Mais uma conquista da AMA...</p>
                                 <div class="noticia__descricao">
@@ -245,7 +251,7 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="imagens/pessoa-2.png" alt="" class="depoimentos__imagem-associado">
+                            <img src="img/pessoa-2.png" alt="" class="depoimentos__imagem-associado">
                             <div class="depoimentos__container">
                                 <h3 class="depoimmentos__titulo-associado">SABEM O QUE FAZEM</h3>
                                 <p class="depoimentos__texto-associado">Eles sabem o que estão fazendo, notei que o meu
@@ -259,7 +265,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="imagens/pessoa-1.png" alt="" class="depoimentos__imagem-associado">
+                            <img src="img/pessoa-1.png" alt="" class="depoimentos__imagem-associado">
                             <div class="depoimentos__container">
                                 <h3 class="depoimmentos__titulo-associado">ATENCIOSOS</h3>
                                 <p class="depoimentos__texto-associado">Ambiente super confortável, meu filho adorou
@@ -269,7 +275,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="imagens/pessoa-3.png" alt="" class="depoimentos__imagem-associado">
+                            <img src="img/pessoa-3.png" alt="" class="depoimentos__imagem-associado">
                             <div class="depoimentos__container">
                                 <h3 class="depoimmentos__titulo-associado">ATENCIOSOS</h3>
                                 <p class="depoimentos__texto-associado">Ambiente super confortável, meu filho adorou
@@ -288,13 +294,13 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="imagens/parceiros-convenios/Ellipse 1.png" alt="">
+                            <img src="img/parceiros-convenios/Ellipse 1.png" alt="Parceiros/Convenios da AMA">
                         </div>
                         <div class="swiper-slide">
-                            <img src="imagens/parceiros-convenios/Ellipse 2.png" alt="">
+                            <img src="img/parceiros-convenios/Ellipse 2.png" alt="Parceiros/Convenios da AMA">
                         </div>
                         <div class="swiper-slide">
-                            <img src="imagens/parceiros-convenios/Ellipse 3.png" alt="">
+                            <img src="img/parceiros-convenios/Ellipse 3.png" alt="Parceiros/Convenios da AMA">
                         </div>
                     </div>
                 </div>
@@ -376,7 +382,7 @@
                 </div>
             </div>
             <div class="rodape__descricao">
-                <img class="rodape__logo__ama" src="imagens/ama-logo-footer.png" alt="Logo da AMA Itapoá">
+                <img class="rodape__logo__ama" src="img/ama-logo-footer.png" alt="Logo da AMA Itapoá">
                 <a class="rodape__local-link" href="https://www.google.com.br/maps/place/Ama+Itapoa/@-26.1102082,-48.6063699,17z/data=!4m15!1m8!3m7!1s0x94d956d07e324dc7:0xf57e6264982d87b0!2sR.+1.530+Mariani+Kummrow+-+Centro,+Itapo%C3%A1+-+SC,+89249-000!3b1!8m2!3d-26.1103238!4d-48.6063699!16s%2Fg%2F11cnn_kjf0!3m5!1s0x94d957b1c930798d:0x72806c1df868a95c!8m2!3d-26.1098453!4d-48.601746!16s%2Fg%2F11nfn4ytp3?entry=ttu" target="_blank">
                     <p class="rodape__texto">
                         <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -423,6 +429,7 @@
             },
         });
     </script>
+    <script src="js/menu_header.js"></script>
 </body>
 
 </html>

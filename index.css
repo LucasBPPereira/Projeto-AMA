@@ -41,7 +41,7 @@ body {
 
 /* Antes do Rodapé no mobile */
 .img-footer-mob {
-    background-image: url("../imagens/forma-footer-mob.png");
+    background-image: url("../img/forma-footer-mob.png");
     background-repeat: no-repeat;
     height: 114px;
     position: relative;
@@ -79,7 +79,7 @@ body {
 @media screen and (min-width: 1024px) {
     .background-azul-desktop {
         display: block;
-        background-image: url("imagens/FundoAzulHome.png");
+        background-image: url("img/FundoAzulHome.png");
         background-size: cover;
         width: 100%;
         height: 1900px;
