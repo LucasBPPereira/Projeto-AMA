@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias da AMA Itapoá</title>
-    <link rel="stylesheet" href="../../../resetcss.css">
+    <link href="../../../styles/alt_styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/alt_styles/resetcss.css">
     <link rel="stylesheet" href="../../../styles/header.css">
     <link rel="stylesheet" href="../../../styles/rodape.css">
-    <link rel="stylesheet" href="../../../index.css">
     <link rel="stylesheet" href="components\pages\noticias\noticiasDaAMA.css">
+    <link rel="stylesheet" href="../../../index.css">
 </head>
 <body>
     <header class="cabecalho">
         <div class="cabecalho__logo container">
-            <a href="index.html" class="logo__cabecalho-mob"><img src="../../../imagens/Logo-Ama mob.png"
+            <a href="index.html" class="logo__cabecalho-mob"><img src="../../../img/Logo-Ama mob.png"
                     alt="Logo da AMA Itapoá"></a>
-            <a href="index.html" class="logo__cabecalho-desktop"><img src="../../../imagens/ama-logo-header.png"
+            <a href="index.html" class="logo__cabecalho-desktop"><img src="../../../img/ama-logo-header.png"
                     alt="Logo da AMA Itapoá"></a>
         </div>
         <nav class="cabecalho__nav container">
@@ -30,7 +31,11 @@
             </nav>
             <input type="checkbox" id="menu" class="nav__container">
             <label for="menu">
-                <span class="nav__container-menu container-img"></span>
+                <div class="hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </div>
             </label>
             <ul class="nav__pages">
                 <li class="pages__item-titulo">Menu</li>
@@ -145,7 +150,7 @@
                 </div>
             </div>
             <div class="rodape__descricao">
-                <img class="rodape__logo__ama" src="../../../imagens/ama-logo-footer.png" alt="Logo da AMA Itapoá">
+                <img class="rodape__logo__ama" src="../../../img/ama-logo-footer.png" alt="Logo da AMA Itapoá">
                 <a class="rodape__local-link" href="https://www.google.com.br/maps/place/Ama+Itapoa/@-26.1102082,-48.6063699,17z/data=!4m15!1m8!3m7!1s0x94d956d07e324dc7:0xf57e6264982d87b0!2sR.+1.530+Mariani+Kummrow+-+Centro,+Itapo%C3%A1+-+SC,+89249-000!3b1!8m2!3d-26.1103238!4d-48.6063699!16s%2Fg%2F11cnn_kjf0!3m5!1s0x94d957b1c930798d:0x72806c1df868a95c!8m2!3d-26.1098453!4d-48.601746!16s%2Fg%2F11nfn4ytp3?entry=ttu" target="_blank">
                     <p class="rodape__texto">
                         <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,5 +180,6 @@
             </svg>
         </a>
     </div>
+    <script src="../../../js/menu_header.js"></script>
 </body>
 </html>
