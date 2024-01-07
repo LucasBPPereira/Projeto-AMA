@@ -40,6 +40,13 @@ body {
 
 
 /* Antes do Rodapé no mobile */
+
+
+
+.img-footer-dk-tb {
+    background-image: none;
+}
+
 .img-footer-mob {
     background-image: url("../img/forma-footer-mob.png");
     background-repeat: no-repeat;
@@ -71,12 +78,23 @@ body {
 }
 
 @media screen and (min-width: 416px) {
+
     .img-footer-mob {
         display: none;
     }
+
+    .img-footer-dk-tb {
+        display: block;
+        background-image: url(components/pages/noticias/img/div-abaixo-main.svg);
+        background-position: center;
+        background-size: cover;         
+        height: 112px;         
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
+    
     .background-azul-desktop {
         display: block;
         background-image: url("img/FundoAzulHome.png");
